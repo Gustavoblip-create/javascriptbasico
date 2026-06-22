@@ -7,10 +7,12 @@
     <title>Document</title>
 </head>
 <body>
+    <p id="txt01"></p>
     <script>
         document.write('<h1 style="font-family: verdana ; color: red;">Primeira pagina em javascript</h1>');
 
-        document.write('<h1 style="">Texto</h1>')
+        document.getElementById("txt01").innnerHTML = "<strong>Atribuindo o texto ao páragrafo com elementByID </strong>";
+        document.getElementById("txt01").style.color ='blue';
     </script>
 </body>
 </html>
