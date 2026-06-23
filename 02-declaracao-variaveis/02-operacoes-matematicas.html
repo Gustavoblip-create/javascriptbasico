@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-AU-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simppes</title>
+</head>
+<body>
+    <h1>Calculadora Simples</h1>
+
+    <script>
+        var valor1= parseFloat(prompt("Digite o primeiro valor:")); 
+
+        var valor2= parseFloat(prompt("Digite o segundo valor:")); 
+
+        if(isNaN(valor1) || isNaN(valor2)){
+            document.write("valores inválidos. certifiew-se d edigitar os numeros");
+        }else{
+            let soma;
+            soma=valor1 + valor2;
+
+            var subtracao=valor1-valor2;
+            var multiplicacao=valor1*valor2;
+            var divisao = valor1 / valor2;
+            var restoDivisao = valor1%valor2;
+            var exponenciacao = valor1 ** valor2;
+            var incremento = ++valor1;
+            var decremento= --valor2;
+
+            document.write(`Adição: ${valor1} + ${valor2} = ${soma} <br>`);
+            document.write(`Subtração: ${valor1} - ${valor2} = ${subtracao} <br>`);
+            document.write(`Multiplicação: ${valor1} * ${valor2} = ${multiplicacao} <br>`);
+            document.write(`Divisão: ${valor1} / ${valor2} = ${divisao} <br>`);
+            document.write(`Resto da divisão: de ${valor1} por ${valor2} é ${restoDivisao} <br>`);
+            document.write(`Exponenciação: ${valor1} elevado a ${valor2} = ${exponeciacao} <br>`);
+            document.write(`Incremento do valor1: ${incremento} <br>`);
+            document.write(`Decremento do valor2: ${decremento} <br>`);
+        }
+    </script>
+
+</body>
+</html>
